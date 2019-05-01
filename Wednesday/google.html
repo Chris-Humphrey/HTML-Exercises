@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html> -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0px;
+            }
+
+            .column {
+                float: left;
+                padding: 10px;
+                height: 300px;
+            }
+
+            .column1{
+                position: relative;
+                width: 20%;
+            }
+
+            .column2{
+                width: 80%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            h3{
+                text-align: center;
+                background-color: white;
+                padding: 30px;
+            }
+
+            .centerImg{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-bottom:10px;
+            }
+            /* .box{
+                border: 2px solid black;
+                padding; 20px;
+                display: block;
+            } */
+            form{
+                padding-left: 31.5%;
+            }
+            .p1{
+                display: inline-block;
+                color:rgb(109, 108, 108);
+                margin-left: 39%;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: rgb(228, 228, 228);
+            }
+            .p2{
+                display: inline-block;
+                color:rgb(109, 108, 108);
+                padding: 10px;
+                margin-left: 20px;
+                margin-top: 20px;
+                background-color: rgb(228, 228, 228);
+            }
+        </style>
+    </head>
+    <body>
+
+        <h3></h3>
+        <div class="centerImg">
+            <img src="https://dc-class.herokuapp.com/static/fullstack/projects/google/google_main_img.png">
+        </div>
+        <form action="">
+            <input size="70" placeholder="Search" type="text">
+        </form>
+        <div>
+            <p class="p1">Google Search</p>
+            <p class='p2'>I'm Feeling Lucky</p>
+        </div>
+    </body>
+</html>
