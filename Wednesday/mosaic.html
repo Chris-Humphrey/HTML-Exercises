@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mosaic</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .flexContainer{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            align-items: stretch;
+        }
+
+        .flexContainerColumn{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: stretch;
+        }
+
+        .white{
+            background-color: white;
+        }
+        .black{
+            background-color: black;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+
+        .flex1{
+            flex: 1;
+        }
+        .flex2{
+            flex: 2;
+        }
+        .flex3{
+            flex: 3;
+        }
+        .flex4{
+            flex: 4;
+        }
+        .flex5{
+            flex: 5;
+        }
+        .border{
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- first column -->
+        <div class="red flex1"></div>
+
+        <!-- second column -->
+        <div class="yellow flexContainerColumn flex1">
+            <div class="flex1 flexContainer">
+                <div class="flex1 flexContainerColumn">
+                    <div class="flex1 yellow border"></div>
+                    <div class="flex2 yellow border"></div>
+                    <div class="flex2 white flexContainer">
+                        <div class="flex1 white border"></div>
+                        <div class="flex1 white border"></div>
+                    </div>
+                </div>
+
+                <div class="flex1 flexContainerColumn">
+                    <div class="flex2 blue border"></div>
+                    <div class="flex2 red border"></div>
+                    <div class="flex1 white border"></div>
+                </div>
+
+            </div>
+            <div class="flex1 black flexContainer">
+                <div class='flex1 flexContainerColumn'>
+                    <div class="flex1 white border"></div>
+                    <div class="flex2 blue border"></div>
+                    <div class="flex2 red border"></div>
+                </div>
+                <div class="flex1 flexContainerColumn">
+                    <div class="flex2 white flexContainer">
+                        <div class="flex1 border white"></div>
+                        <div class="flex1 border white"></div>
+                    </div>
+                    <div class="flex2 border yellow"></div>
+                    <div class="flex1 flexContainer">
+                        <div class="flex1 border white"></div>
+                        <div class="flex1 border black"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third column -->
+        <div class="flex1 flexContainerColumn">
+            <div class="flex1 flexContainer">
+                <div class="flex1 flexContainer">
+                    <div class="flex1 yellow border"></div>
+                    <div class="flex1 black border"></div>
+                </div>
+                <div class="flex2 border white"></div>
+            </div>
+            <div class="flex5 flexContainer">
+                <div class="flex3 flexContainerColumn">
+                    <div class="flex1 flexContainerColumn">
+                        <div class="flex1 flexContainer">
+                            <div class="flex1 flexContainerColumn">
+                                <div class="flex1 border yellow"></div>
+                                <div class="flex1 border black"></div>
+                            </div>
+                            <div class="flex1 border white"></div>
+                        </div>
+                        <div class="flex1 white">
+                            <div class="flex1 flexContainer">
+                                <div class="flex1 flexContainerColumn">
+                                    <div class="flex1 border white"></div>
+                                    <div class="flex1 border white"></div>
+                                </div>
+                                <div class="flex1 black border"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex1 border blue"></div>
+                </div>
+                <div class="flex1 flexContainerColumn">
+                    <div class="flex3 border yellow"></div>
+                    <div class="flex3 border white"></div>
+                    <div class="flex2 border white"></div>
+                </div>
+            </div>
+            <div class="flex1 border flexContainer">
+                <div class="flex2 border white"></div>
+                <div class="flex1 border white"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
